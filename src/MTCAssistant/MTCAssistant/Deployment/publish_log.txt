@@ -1,0 +1,28 @@
+Microsoft (R) Build Engine version 16.9.0+57a23d249 for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+{
+  "active": true,
+  "author": "N/A",
+  "author_email": "N/A",
+  "complete": true,
+  "deployer": "ZipDeploy",
+  "end_time": "2021-03-25T12:41:56.2459586Z",
+  "id": "e2c2f2cee3364b0d857f93f8e03a99bb",
+  "is_readonly": true,
+  "is_temp": false,
+  "last_success_end_time": "2021-03-25T12:41:56.2459586Z",
+  "log_url": "https://mtcvirtualassist-7zbhuay.scm.azurewebsites.net/api/deployments/latest/log",
+  "message": "Created via a push deployment",
+  "progress": "",
+  "provisioningState": "Succeeded",
+  "received_time": "2021-03-25T12:41:48.8701225Z",
+  "site_name": "MtcVirtualAssist-7zbhuay",
+  "start_time": "2021-03-25T12:41:50.3724603Z",
+  "status": 4,
+  "status_text": "",
+  "url": "https://mtcvirtualassist-7zbhuay.scm.azurewebsites.net/api/deployments/latest"
+}
+WARNING: Getting scm site credentials for zip deployment
+WARNING: Starting zip deployment. This operation can take a while to complete ...
+WARNING: Deployment endpoint responded with status code 202

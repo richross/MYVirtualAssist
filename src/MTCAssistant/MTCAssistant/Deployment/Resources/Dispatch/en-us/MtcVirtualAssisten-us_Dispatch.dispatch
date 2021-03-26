@@ -1,0 +1,40 @@
+{
+  "authoringRegion": "westus",
+  "culture": "en-us",
+  "hierarchical": true,
+  "useAllTrainingData": true,
+  "dontReviseUtterance": false,
+  "copyLuisData": true,
+  "normalizeDiacritics": true,
+  "services": [
+    {
+      "intentName": "l_General",
+      "appId": "6854970e-dfa6-4d9c-a772-80f1027b6457",
+      "authoringKey": "21e3f056dff04e8cb87b70f084d844e3",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "MtcVirtualAssisten-us_General",
+      "id": "1"
+    },
+    {
+      "intentName": "q_Faq",
+      "includePrompts": true,
+      "kbId": "8027cfb9-fe71-4744-b776-3779d7e25cfa",
+      "subscriptionKey": "1f88f9b1a330457fbb7263dd9d1309b9",
+      "type": "qna",
+      "name": "Faq",
+      "id": "2"
+    }
+  ],
+  "serviceIds": [
+    "1",
+    "2"
+  ],
+  "appId": "4c3f88c4-5cfc-4d21-9c76-7f8fa23656eb",
+  "authoringKey": "21e3f056dff04e8cb87b70f084d844e3",
+  "version": "Dispatch",
+  "region": "westus",
+  "type": "dispatch",
+  "name": "MtcVirtualAssisten-us_Dispatch"
+}

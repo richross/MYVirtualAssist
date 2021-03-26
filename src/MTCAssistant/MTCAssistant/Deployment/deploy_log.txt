@@ -1,0 +1,656 @@
+{
+  "error": null,
+  "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Resources/deployments/template",
+  "name": "template",
+  "properties": {
+    "correlationId": "e37fe340-31cb-47c8-8ddd-8efb57176d07",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.DocumentDB/databaseAccounts/mtcvirtualassist7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "mtcvirtualassist7zbhuay",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts"
+          }
+        ],
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.DocumentDB/databaseAccounts/mtcvirtualassist7zbhuay/sqlDatabases/botstate-db",
+        "resourceGroup": "EXP-LUISforSNOW-RG",
+        "resourceName": "mtcvirtualassist7zbhuay/botstate-db",
+        "resourceType": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Web/serverfarms/MtcVirtualAssist-7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "MtcVirtualAssist-7zbhuay",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Web/sites/MtcVirtualAssist-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG",
+        "resourceName": "MtcVirtualAssist-7zbhuay",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Web/sites/MtcVirtualAssist-7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "MtcVirtualAssist-7zbhuay",
+            "resourceType": "Microsoft.Web/sites"
+          },
+          {
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Insights/components/MtcVirtualAssist-7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "MtcVirtualAssist-7zbhuay",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.BotService/botServices/MtcVirtualAssist-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG",
+        "resourceName": "MtcVirtualAssist-7zbhuay",
+        "resourceType": "Microsoft.BotService/botServices"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.CognitiveServices/accounts/MtcVirtualAssist-luisruntime-7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "MtcVirtualAssist-luisruntime-7zbhuay",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          }
+        ],
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.CognitiveServices/accounts/MtcVirtualAssist-luisauthoring-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG",
+        "resourceName": "MtcVirtualAssist-luisauthoring-7zbhuay",
+        "resourceType": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Web/Sites/MtcVirtualAssist-qnahost-7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "MtcVirtualAssist-qnahost-7zbhuay",
+            "resourceType": "Microsoft.Web/Sites"
+          },
+          {
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Search/searchServices/mtcvirtualassist-search-7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "mtcvirtualassist-search-7zbhuay",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/microsoft.insights/components/MtcVirtualAssist-7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "MtcVirtualAssist-7zbhuay",
+            "resourceType": "microsoft.insights/components"
+          }
+        ],
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.CognitiveServices/accounts/MtcVirtualAssist-qna-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG",
+        "resourceName": "MtcVirtualAssist-qna-7zbhuay",
+        "resourceType": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Web/serverFarms/MtcVirtualAssist-7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "MtcVirtualAssist-7zbhuay",
+            "resourceType": "Microsoft.Web/serverFarms"
+          }
+        ],
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Web/sites/MtcVirtualAssist-qnahost-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG",
+        "resourceName": "MtcVirtualAssist-qnahost-7zbhuay",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Web/Sites/MtcVirtualAssist-qnahost-7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "MtcVirtualAssist-qnahost-7zbhuay",
+            "resourceType": "Microsoft.Web/Sites"
+          },
+          {
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Insights/components/MtcVirtualAssist-7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "MtcVirtualAssist-7zbhuay",
+            "resourceType": "Microsoft.Insights/components"
+          },
+          {
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Search/searchServices/mtcvirtualassist-search-7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "mtcvirtualassist-search-7zbhuay",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "actionName": "listAdminKeys",
+            "apiVersion": "2015-08-19",
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Search/searchServices/mtcvirtualassist-search-7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "mtcvirtualassist-search-7zbhuay",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "apiVersion": "2015-05-01",
+            "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Insights/components/MtcVirtualAssist-7zbhuay",
+            "resourceGroup": "EXP-LUISforSNOW-RG",
+            "resourceName": "MtcVirtualAssist-7zbhuay",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Web/sites/MtcVirtualAssist-qnahost-7zbhuay/config/appsettings",
+        "resourceGroup": "EXP-LUISforSNOW-RG",
+        "resourceName": "MtcVirtualAssist-qnahost-7zbhuay/appsettings",
+        "resourceType": "Microsoft.Web/sites/config"
+      }
+    ],
+    "duration": "PT0S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": null,
+    "outputs": null,
+    "parameters": {
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "MtcVirtualAssist-7zbhuay"
+      },
+      "appServicePlanName": {
+        "type": "String",
+        "value": "MtcVirtualAssist-7zbhuay"
+      },
+      "appServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      },
+      "botServiceName": {
+        "type": "String",
+        "value": "MtcVirtualAssist-7zbhuay"
+      },
+      "botServiceSku": {
+        "type": "String",
+        "value": "S1"
+      },
+      "botWebAppName": {
+        "type": "String",
+        "value": "MtcVirtualAssist-7zbhuay"
+      },
+      "contentModeratorLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "contentModeratorName": {
+        "type": "String",
+        "value": "MtcVirtualAssist-cm-7zbhuay"
+      },
+      "contentModeratorSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "cosmosDbDatabaseName": {
+        "type": "String",
+        "value": "botstate-db"
+      },
+      "cosmosDbDatabaseThroughput": {
+        "type": "Int",
+        "value": 400
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "MtcVirtualAssist-7zbhuay"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "luisAuthoringLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisAuthoringName": {
+        "type": "String",
+        "value": "MtcVirtualAssist-luisauthoring-7zbhuay"
+      },
+      "luisAuthoringSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "luisRuntimeLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "luisRuntimeName": {
+        "type": "String",
+        "value": "MtcVirtualAssist-luisruntime-7zbhuay"
+      },
+      "luisRuntimeSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "microsoftAppId": {
+        "type": "String",
+        "value": "fa5addb3-369b-401e-a28b-231e39e46e40"
+      },
+      "microsoftAppPassword": {
+        "type": "String",
+        "value": "MTCR0cks@2021"
+      },
+      "name": {
+        "type": "String",
+        "value": "MtcVirtualAssist"
+      },
+      "qnaMakerSearchLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "qnaMakerSearchName": {
+        "type": "String",
+        "value": "MtcVirtualAssist-search-7zbhuay"
+      },
+      "qnaMakerSearchSku": {
+        "type": "String",
+        "value": "standard"
+      },
+      "qnaMakerServiceLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "qnaMakerServiceName": {
+        "type": "String",
+        "value": "MtcVirtualAssist-qna-7zbhuay"
+      },
+      "qnaMakerServiceSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "qnaMakerWebAppLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "qnaMakerWebAppName": {
+        "type": "String",
+        "value": "MtcVirtualAssist-qnahost-7zbhuay"
+      },
+      "resourceTagName": {
+        "type": "String",
+        "value": "bot"
+      },
+      "resourceTagValue": {
+        "type": "String",
+        "value": "MtcVirtualAssist-7zbhuay"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "MtcVirtualAssist-7zbhuay"
+      },
+      "suffix": {
+        "type": "String",
+        "value": "7zbhuay"
+      },
+      "useContentModerator": {
+        "type": "Bool",
+        "value": true
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useLuisAuthoring": {
+        "type": "Bool",
+        "value": true
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts"
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts/sqlDatabases"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "serverFarms"
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "sites"
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "sites/config"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "components"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus",
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "accounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Search",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "searchServices"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "13237030577887299400",
+    "templateLink": null,
+    "timestamp": "2021-03-25T12:36:19.737425+00:00",
+    "validatedResources": [
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Resources/deployments/3822b5f4-d098-4b57-9ee6-3bee686aec4c",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.DocumentDB/databaseAccounts/mtcvirtualassist7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.DocumentDB/databaseAccounts/mtcvirtualassist7zbhuay/sqlDatabases/botstate-db",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Storage/storageAccounts/mtcvirtualassist7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Web/serverFarms/MtcVirtualAssist-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Insights/components/MtcVirtualAssist-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Web/sites/MtcVirtualAssist-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.BotService/botServices/MtcVirtualAssist-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.CognitiveServices/accounts/MtcVirtualAssist-cm-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.CognitiveServices/accounts/MtcVirtualAssist-luisruntime-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.CognitiveServices/accounts/MtcVirtualAssist-luisauthoring-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.CognitiveServices/accounts/MtcVirtualAssist-qna-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Search/searchServices/mtcvirtualassist-search-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Web/sites/MtcVirtualAssist-qnahost-7zbhuay",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      },
+      {
+        "id": "/subscriptions/595a74d5-5d8a-421d-b364-979ba24a6489/resourceGroups/EXP-LUISforSNOW-RG/providers/Microsoft.Web/sites/MtcVirtualAssist-qnahost-7zbhuay/config/appsettings",
+        "resourceGroup": "EXP-LUISforSNOW-RG"
+      }
+    ]
+  },
+  "resourceGroup": "EXP-LUISforSNOW-RG",
+  "type": "Microsoft.Resources/deployments"
+}
+{
+  "applicationInsights": {
+    "type": "Object",
+    "value": {
+      "InstrumentationKey": "18570052-4256-4ad1-b1fc-69be9793eaad"
+    }
+  },
+  "blobStorage": {
+    "type": "Object",
+    "value": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=mtcvirtualassist7zbhuay;AccountKey=cbLlhZXQfV8yCy6+FV3tY0L9IV2YiAdmdQZYCmweuTy7e+OMUx5pUGYRisltuTBsCq7MsYrSVBCsKDaL7LyFfA==;EndpointSuffix=core.windows.net",
+      "container": "transcripts"
+    }
+  },
+  "botWebAppName": {
+    "type": "String",
+    "value": "MtcVirtualAssist-7zbhuay"
+  },
+  "contentModerator": {
+    "type": "Object",
+    "value": {
+      "key": "efe98e9b289c4c81ae56bcec580a0ec7"
+    }
+  },
+  "cosmosDb": {
+    "type": "Object",
+    "value": {
+      "authKey": "tdfGUOZjw3WuQ7owaThmh2crqZTrmg4bycjK92CNVn9aq8y3bIvZK6y0k7Y3o1ojG12D2yRu5WynCoryx85iGQ==",
+      "containerId": "MtcVirtualAssist-state",
+      "cosmosDBEndpoint": "https://mtcvirtualassist7zbhuay.documents.azure.com:443/",
+      "databaseId": "botstate-db"
+    }
+  },
+  "luis": {
+    "type": "Object",
+    "value": {
+      "accountName": "MtcVirtualAssist-luisruntime-7zbhuay",
+      "authoringKey": "21e3f056dff04e8cb87b70f084d844e3",
+      "authoringRegion": "westus",
+      "endpoint": "https://mtcvirtualassist-luisauthoring-7zbhuay.cognitiveservices.azure.com/",
+      "key": "291b8abee1be4fb08b6cda031da0e6fe",
+      "region": "eastus"
+    }
+  },
+  "qnaMaker": {
+    "type": "Object",
+    "value": {
+      "endpoint": "https://mtcvirtualassist-qnahost-7zbhuay.azurewebsites.net",
+      "key": "1f88f9b1a330457fbb7263dd9d1309b9"
+    }
+  },
+  "resourceGroupName": {
+    "type": "String",
+    "value": "MtcVirtualAssist"
+  }
+}
